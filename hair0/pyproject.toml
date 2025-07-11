@@ -1,0 +1,26 @@
+[project]
+name = "beer0"
+version = "1.0.0"
+description = "AI-powered beverage sommelier that learns your preferences"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "strands-agents[otel]>=0.1.8",
+    "strands-agents-tools>=0.1.5",
+    "mem0ai>=0.1.113",
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "chromadb>=0.4.0",
+    "boto3>=1.34.0",
+    "sentence-transformers>=5.0.0",
+    "pydantic>=2.0.0",
+    "python-multipart>=0.0.6",
+    "protobuf>=5.29.5",
+    "langfuse>=3.1.2",
+    "torch<2.3.0",
+    "requests>=2.32.4",
+]
+
+[tool.pyright]
+venvPath = ".."
+venv = "../.venv"
