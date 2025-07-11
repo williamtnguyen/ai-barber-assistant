@@ -1,0 +1,20 @@
+[project]
+name = "noface"
+version = "1.0.0"
+description = "A service that takes in an image input and describes the face shape with Google MediaPipe"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mediapipe",
+    "jaxlib<0.5.0",
+    "opencv-python>=4.11.0.86",
+    "matplotlib>=3.10.3",
+    "numpy>=1.26.4",
+    "fastapi>=0.116.0",
+    "uvicorn>=0.35.0",
+    "fastmcp>=2.10.4",
+]
+
+[tool.pyright]
+venvPath = ".."
+venv = "../.venv"
