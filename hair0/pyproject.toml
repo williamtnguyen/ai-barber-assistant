@@ -19,6 +19,8 @@ dependencies = [
     "langfuse>=3.1.2",
     "torch<2.3.0",
     "requests>=2.32.4",
+    "squareup>=43.0.0.20250618",
+    "python-dotenv>=1.1.1",
 ]
 
 [tool.pyright]
