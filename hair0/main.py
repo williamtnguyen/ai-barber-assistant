@@ -9,6 +9,7 @@ import sys
 import os
 from pathlib import Path
 import base64
+import uvicorn
  
 # Get keys for your project from the project settings page: https://cloud.langfuse.com
 os.environ["LANGFUSE_PUBLIC_KEY"] = "pk-lf-4f815fc0-c06a-41f9-bc14-5fd6d5f91af2"
@@ -34,9 +35,7 @@ sys.path.insert(0, str(Path(__file__).parent / "src"))
 from src.web.server import app
 
 
-if __name__ == "__main__":
-    import uvicorn
-    
+if __name__ == "__main__":    
     print("🍷 Starting Hair0 - AI Haircut Consultant 💇‍♂️")
     print("=" * 50)
     

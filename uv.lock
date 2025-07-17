@@ -196,9 +196,11 @@ dependencies = [
     { name = "mem0ai" },
     { name = "protobuf" },
     { name = "pydantic" },
+    { name = "python-dotenv" },
     { name = "python-multipart" },
     { name = "requests" },
     { name = "sentence-transformers" },
+    { name = "squareup" },
     { name = "strands-agents", extra = ["otel"] },
     { name = "strands-agents-tools" },
     { name = "torch" },
@@ -214,9 +216,11 @@ requires-dist = [
     { name = "mem0ai", specifier = ">=0.1.113" },
     { name = "protobuf", specifier = ">=5.29.5" },
     { name = "pydantic", specifier = ">=2.0.0" },
+    { name = "python-dotenv", specifier = ">=1.1.1" },
     { name = "python-multipart", specifier = ">=0.0.6" },
     { name = "requests", specifier = ">=2.32.4" },
     { name = "sentence-transformers", specifier = ">=5.0.0" },
+    { name = "squareup", specifier = ">=43.0.0.20250618" },
     { name = "strands-agents", extras = ["otel"], specifier = ">=0.1.8" },
     { name = "strands-agents-tools", specifier = ">=0.1.5" },
     { name = "torch", specifier = "<2.3.0" },
@@ -2363,6 +2367,21 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/fa/2e/677c17c5d6a004c3c45334ab1dbe7b7deb834430b282b8a0f75ae220c8eb/sqlalchemy-2.0.41-cp313-cp313-win32.whl", hash = "sha256:bfc9064f6658a3d1cadeaa0ba07570b83ce6801a1314985bf98ec9b95d74e15f", size = 2082420, upload-time = "2025-05-14T17:55:52.69Z" },
     { url = "https://files.pythonhosted.org/packages/e9/61/e8c1b9b6307c57157d328dd8b8348ddc4c47ffdf1279365a13b2b98b8049/sqlalchemy-2.0.41-cp313-cp313-win_amd64.whl", hash = "sha256:82ca366a844eb551daff9d2e6e7a9e5e76d2612c8564f58db6c19a726869c1df", size = 2108329, upload-time = "2025-05-14T17:55:54.495Z" },
     { url = "https://files.pythonhosted.org/packages/1c/fc/9ba22f01b5cdacc8f5ed0d22304718d2c758fce3fd49a5372b886a86f37c/sqlalchemy-2.0.41-py3-none-any.whl", hash = "sha256:57df5dc6fdb5ed1a88a1ed2195fd31927e705cad62dedd86b46972752a80f576", size = 1911224, upload-time = "2025-05-14T17:39:42.154Z" },
+]
+
+[[package]]
+name = "squareup"
+version = "43.0.0.20250618"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpx" },
+    { name = "pydantic" },
+    { name = "pydantic-core" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a3/7f/d82899d6e3b71283c55db3336b214e6ca7827b530e6b8b770d82e3961b76/squareup-43.0.0.20250618.tar.gz", hash = "sha256:32efc2ecd6d49e349c399bf66b621b36da587220bc9a577b892fe3bdedd70a6a", size = 722268, upload-time = "2025-06-18T22:12:28.268Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f1/bb/05c3ac08c19bd44a612c67d7451aaf2751ae2ffaf5307cb24815bcfea937/squareup-43.0.0.20250618-py3-none-any.whl", hash = "sha256:a014f08857ad882fad746d09c3287a56f8a2683dfb13e8a32c0eebd409dd1a4b", size = 2181068, upload-time = "2025-06-18T22:12:26.951Z" },
 ]
 
 [[package]]
